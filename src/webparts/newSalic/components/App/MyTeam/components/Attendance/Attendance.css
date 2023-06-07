@@ -1,0 +1,4 @@
+.my-team-attendance .ant-table th.ant-table-cell {
+  min-width: 100px;
+  padding: 7px;
+}

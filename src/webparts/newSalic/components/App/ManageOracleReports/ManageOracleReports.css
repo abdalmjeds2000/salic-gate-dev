@@ -1,0 +1,88 @@
+.manage-oracle-reports-container {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: calc(100vh - 140px);
+  border-radius: 15px;
+  overflow: hidden;
+}
+.manage-oracle-reports-container .tree-section {
+  background-color: #ededed;
+  padding: 25px;
+  flex: 2;
+}
+.manage-oracle-reports-container .manage-section {
+  background-color: #fff;
+  box-shadow: -20px 0 20px #00000010;
+  flex: 7;
+}
+.manage-oracle-reports-container .manage-section .header {
+  background-color: #f9f9f9;
+  padding: 12px 25px;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+  border-bottom: 4px solid #ededed;
+}
+.manage-oracle-reports-container .manage-section .update-form {
+  padding: 12px 25px;
+}
+
+
+@media screen and (max-width: 992px) {
+  .manage-oracle-reports-container {
+    flex-direction: column;
+  }
+  .manage-oracle-reports-container .tree-section {
+    max-height: 180px;
+    overflow: auto;
+    flex: 1;
+  }
+  .manage-oracle-reports-container .manage-section {
+    flex: 1;
+    box-shadow: 0 -10px 20px #00000010;
+  }
+  .manage-oracle-reports-container .manage-section .header {
+    padding: 12px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .manage-oracle-reports-container .manage-section .update-form {
+    padding: 12px;
+  }
+
+
+  .manage-oracle-reports-container .ant-transfer {
+    flex-direction: column !important;
+    gap: 5px !important;
+  }
+  .manage-oracle-reports-container .ant-transfer-list {
+    width: 100% !important;
+  }
+}
+
+
+.manage-oracle-reports-container .ant-tree {
+  background: transparent !important;
+}
+.manage-oracle-reports-container .ant-tree-show-line .ant-tree-switcher {
+  background: transparent !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+.manage-oracle-reports-container .ant-tree .ant-tree-node-content-wrapper.ant-tree-node-selected {
+  background-color: var(--main-color) !important;
+  color: #fff !important;
+}
+.manage-oracle-reports-container .ant-tree .ant-tree-node-content-wrapper {
+  min-height: 28px !important;
+  padding: 3px 25px 5px 8px !important;
+  font-size: 1.2rem !important;
+  line-height: 1.5 !important;
+}
+
+.manage-oracle-reports-container .ant-select-selector,
+.manage-oracle-reports-container .ant-input {
+  border-radius: 5px !important;
+}

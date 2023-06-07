@@ -1,0 +1,69 @@
+.simple-user-panel {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  gap: 10px;
+  position: fixed;
+  right: 0;
+  top: 0;
+  height: 50px;
+  padding: 0 25px;
+  z-index: 4;
+}
+
+.simple-user-panel > img {
+  width: 45px;
+  height: 45px;
+  border: 2px solid #fff;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.simple-user-panel > p {
+  white-space: nowrap;
+  font-size: 1.1rem;
+  line-height: 1;
+}
+
+.simple-user-panel .icons {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.simple-user-panel .icons > a {
+  position: relative;
+  line-height: 1;
+}
+.simple-user-panel .icons > a svg {
+  width: 30px;
+  height: 30px;
+  background-color: #fff;
+  padding: 4px;
+  border-radius: 50px;
+  border: 1px solid var(--third-color);
+}
+
+.simple-user-panel .icons > a svg:hover {
+  cursor: pointer;
+  background-color: var(--third-color);
+}
+
+
+@media screen and (max-width: 1200px) {
+  .simple-user-panel > p {
+    max-width: 80px!important;
+    overflow: hidden!important;
+    white-space: nowrap!important;
+    text-overflow: ellipsis!important;
+    display: inline-block!important;
+  }
+}
+@media screen and (max-width: 800px) {
+  .simple-user-panel {
+    display: none;
+  }
+}
+
+
+

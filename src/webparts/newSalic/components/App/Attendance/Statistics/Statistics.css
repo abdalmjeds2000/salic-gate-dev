@@ -1,0 +1,299 @@
+  
+.statistics-container {
+  display: grid;
+  padding: 25px;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+}
+.statistics-container .monthly-attendance {
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 15px;
+  grid-area: 1 / 1 / 2 / 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 13px 16px #07448b10;
+}
+.statistics-container .head {
+  margin: 0 0 10px 0;
+  color: var(--text-color);
+  font-weight: 400;
+}
+.statistics-container .head h3 {
+  display: block;
+  font-weight: 400;
+  font-size: 1.5rem;
+  margin-bottom: 5px !important;
+}
+.statistics-container .head p {
+  font-size: 1rem;
+  display: block;
+  padding: 0;
+}
+.statistics-container .head select {
+  border: 0;
+  padding: 5px 0;
+  outline-color: var(--third-color);
+  cursor: pointer;
+}
+.statistics-container .monthly-attendance .body {
+  position: relative;
+}
+
+.statistics-container .monthly-attendance .body .index {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.statistics-container .monthly-attendance .body .index span {
+  display: block;
+  color: var(--text-color);
+  font-size: 12px;
+  line-height: 20px;
+  position: relative;
+  padding-left: 15px;
+}
+.statistics-container .monthly-attendance .body .index span::after {
+  content: '';
+  width: 8px;
+  height: 8px;
+  background-color: #43A2CC;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 50%;
+}
+.statistics-container .monthly-attendance .body .index span:last-child::after {
+  background-color: #FD96A6;
+}
+
+
+.statistics-container .monthly-attendance .body .radialBar > div {
+  height: 200px;
+}
+
+
+
+
+.statistics-container .annual-attendance {
+  grid-area: 1 / 3 / 2 / 6;
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 13px 16px #07448b10;
+}
+
+.statistics-container .annual-attendance canvas {
+  height: 250px !important;
+}
+.statistics-container .annual-attendance .head h3 {
+  display: inline;
+}
+.statistics-container .annual-attendance .head p {
+  display: inline;
+  padding: 0 10px;
+}
+
+
+
+.statistics-container .employees-availability-attendance {
+  grid-area: 2 / 1 / 3 / 6;
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 13px 16px #07448b10;
+}
+
+
+.statistics-container .employees-availability-attendance .body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+
+
+.column-chart-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.column-chart-container .index {
+  gap: 10px;
+  padding: 25px 15px 0 15px;
+}
+
+.column-chart-container canvas {
+  height: 200px !important;
+}
+
+.column-chart-container .index ul {
+  gap: 25px;
+  list-style: outside;
+  color: #43A2CC;
+  font-size: 14px;
+  padding: 25px;
+}
+.column-chart-container .index ul li {
+  font-size: 22px;
+  line-height: 20px;
+}
+.column-chart-container .index ul li:nth-child(1) {
+  color: #F9A654;
+}
+.column-chart-container .index ul li:nth-child(2) {
+  color: #FD96A6;
+}
+.column-chart-container .index ul li:nth-child(3) {
+  color: #43A2CC;
+}
+.column-chart-container .index ul li:nth-child(4) {
+  color: #66CE9A;
+}
+.column-chart-container .index ul li:nth-child(5) {
+  color: #897ED4;
+}
+
+.column-chart-container .index ul li p {
+  font-size: 14px;
+  line-height: 20px;
+  position: relative;
+  top: -3px;
+  left: -5px;
+}
+.employees-availability-attendance .body .buttons {
+  columns: 200px 3;
+  max-width: 750px;
+}
+
+.employees-availability-attendance .body .buttons input {
+  border: none;
+  outline: none;
+  color: var(--text-color);
+  background-color: #E4E9FA60;
+  border-radius: 50px;
+  padding: 8px 15px;
+  min-width: 100px;
+  font-family: Helvetica, Arial;
+}
+.employees-availability-attendance .body .buttons input::placeholder {
+  color: var(--text-color);
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 1000px) {
+  .statistics-container .employees-availability-attendance {
+    flex-direction: column;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 800px) {
+
+  .statistics-container .monthly-attendance .body .radialBar  {
+    display: flex;
+    justify-content: center;
+  }
+
+  .statistics-container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 10px;
+  }
+
+  .statistics-container .monthly-attendance .body .radialBar > div {
+    height: 120px;
+    padding: 0 0 0 50px;
+  }
+  
+
+  .statistics-container .monthly-attendance .body .index span {
+    font-size: 10px;
+    line-height: 15px;
+    padding-left: 10px;
+  }
+  .statistics-container .monthly-attendance .body .index span::after {
+    width: 6px;
+    height: 6px;
+  }
+
+
+  .statistics-container .monthly-attendance .body .radialBar > div {
+    height: 230px !important;
+    width: 300px !important;
+  }
+  .statistics-container .monthly-attendance {
+    justify-content: flex-start;
+  }
+
+
+
+
+  .statistics-container .employees-availability-attendance {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .statistics-container .employees-availability-attendance .body {
+    flex-basis: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .statistics-container .employees-availability-attendance .body .custom-column-chart-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .statistics-container .employees-availability-attendance .body .custom-column-chart-container .data {
+    min-width: 200px;
+    gap: 10px;
+    padding: 25px 15px 0 15px;
+  }
+  .employees-availability-attendance .custom-column-chart-container .data .col {
+    width: 25px;
+  }
+
+
+
+  .employees-availability-attendance .body .buttons input {
+    min-width: 100%;
+  }
+
+  .statistics-container .head h3 {
+    font-size: 1.2rem;
+  }
+  .statistics-container .head p {
+    font-size: 0.9rem;
+  }
+
+
+  .column-chart-container .index {
+    display: none;
+  }
+  .column-chart-container canvas {
+    width: 100% !important;
+  }
+}

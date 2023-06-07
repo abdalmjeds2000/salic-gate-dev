@@ -1,0 +1,171 @@
+.my-team_calendar-container {
+  position: relative;
+  padding: 15px;
+}
+
+
+.my-team_calendar-container a {
+  color: #464646;
+  font-weight: 400;
+}
+
+
+.my-team_calendar-container button {
+  background-color: var(--main-color) !important;
+  border: none !important;
+}
+
+.my-team_calendar-container .fc .fc-button {
+  font-size: 1rem !important;
+  padding: 0.4em 0.8em!important;
+}
+
+
+.my-team_calendar-container .fc .fc-button-primary:not(:disabled).fc-button-active, 
+.my-team_calendar-container .fc .fc-button-primary:not(:disabled):active {
+  background-color: #093964!important;
+  border-color: none !important;
+}
+
+
+.my-team_calendar-container .fc .fc-toolbar-title {
+  font-size: 1rem !important;
+  font-weight: 700 !important;
+}
+
+.my-team_calendar-container .fc .fc-daygrid-day.fc-day-today {
+  background-color: var(--third-color) !important;
+}
+
+
+
+
+.my-team_calendar-container .fc-col-header-cell {
+  background-color: #f5f5f5 !important;
+}
+.my-team_calendar-container .fc-theme-standard td, 
+.my-team_calendar-container .fc-theme-standard th {
+  border: 0.5px solid var(--fc-border-color);
+}
+
+
+
+
+
+
+
+
+
+
+/* Cstom CSS for Antd Calendar */
+#my-team_calendar-container .desktop-calendar {
+  display: block;
+}
+#my-team_calendar-container .mobile-calendar {
+  display: none;
+}
+
+#my-team_calendar-container .events {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+#my-team_calendar-container .events-mobile {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: -2px;
+  display: flex;
+  align-items: end;
+  line-height: 0;
+}
+#my-team_calendar-container .events-mobile .dot-btn {
+  border: 3px solid #fff;
+  background-color: #fff;
+  border-radius: 50%;
+  position: relative;
+  right: -7px;
+  top: -5px;
+  height: 10.5px;
+}
+#my-team_calendar-container .event {
+  height: 100%;
+  border-radius: 4px 4px 0 0;
+  padding: 4px;
+  transition: .3s;
+}
+#my-team_calendar-container .event:hover {
+  background-color: #fff;
+}
+#my-team_calendar-container .event a {
+  line-height: 1;
+}
+
+#my-team_calendar-container .ant-picker-calendar-date-content::-webkit-scrollbar {
+  display: none;
+  width: 5px;
+  transition: .3s;
+}
+#my-team_calendar-container .ant-picker-calendar-date-content:hover::-webkit-scrollbar {
+  display: block;
+}
+#my-team_calendar-container .ant-picker-calendar-date-content::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+#my-team_calendar-container .ant-picker-calendar-date-content::-webkit-scrollbar-thumb {
+  background: rgb(212, 212, 212); 
+  border-radius: 3px;
+}
+#my-team_calendar-container .ant-picker-calendar-date-content::-webkit-scrollbar-thumb:hover {
+  background: rgb(153, 153, 153); 
+}
+
+
+
+
+
+#my-team_calendar-container .ant-picker-calendar-full .ant-picker-panel .ant-picker-calendar-date {
+  border-top: 1px solid #ccc !important;
+}
+
+#my-team_calendar-container .ant-picker-cell:hover:not(.ant-picker-cell-selected):not(.ant-picker-cell-range-start):not(.ant-picker-cell-range-end):not(.ant-picker-cell-range-hover-start):not(.ant-picker-cell-range-hover-end) .ant-picker-cell-inner {
+  background: var(--third-color) !important;
+  border-top-color: var(--main-color) !important;
+}
+
+#my-team_calendar-container .ant-picker-calendar-full .ant-picker-panel .ant-picker-calendar-date-today {
+  border-top: 5px solid var(--main-color) !important;
+}
+
+
+#my-team_calendar-container .ant-picker-calendar-full .ant-picker-panel .ant-picker-cell-selected .ant-picker-calendar-date, .ant-picker-calendar-full .ant-picker-panel .ant-picker-cell-selected .ant-picker-calendar-date-today, .ant-picker-calendar-full .ant-picker-panel .ant-picker-cell-selected:hover .ant-picker-calendar-date, .ant-picker-calendar-full .ant-picker-panel .ant-picker-cell-selected:hover .ant-picker-calendar-date-today {
+  background-color: var(--third-color)!important;
+}
+
+
+
+
+
+
+
+
+/* hide [month | year] view in mobile */
+.my-team_calendar-container .mobile-calendar .ant-picker-calendar-header .ant-picker-calendar-mode-switch {
+  display: none !important;
+}
+
+
+@media screen and (max-width: 1000px) {
+  .my-team_calendar-container {
+    padding: 0;
+  }
+  #my-team_calendar-container .desktop-calendar {
+    display: none;
+  }
+  #my-team_calendar-container .mobile-calendar {
+    display: block;
+  }
+  
+}

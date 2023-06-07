@@ -1,0 +1,30 @@
+.admin-dashboard-container {
+  min-height: calc(100vh - 85px);
+  background-color: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.admin-dashboard-container .header {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 10px 25px;
+  background-color: #f9f9f9;
+  border-bottom: 4px solid #f4f4f4;
+}
+.admin-dashboard-container .main {
+  padding: 25px;
+}
+
+
+
+
+@media screen and (max-width: 992px) {
+  .admin-dashboard-container .header {
+    padding: 10px;
+  }
+  .admin-dashboard-container .main {
+    padding: 10px;
+  }
+}

@@ -1,0 +1,95 @@
+.news-details-page-container {
+  padding: 25px;
+  position: relative;
+  min-height: calc(100vh - 85px);
+  top: 85px;
+  margin-bottom: 85px;
+}
+
+.news-details {
+  display: flex;
+  width: 100%;
+  gap: 25px;
+}
+.news-details-page-container .news-header h1 {
+  font-size: 1.8rem;
+  margin: 0 0 30px 0 !important;
+  font-weight: 400;
+}
+.news-details-page-container .content {
+  flex: 2;
+}
+.news-details-page-container .content h1.news-title {
+  font-size: 2rem;
+  line-height: 1;
+  margin-bottom: 15px !important;
+  font-weight: 400;
+  
+}
+.news-details-page-container .content time {
+  margin-bottom: 20px !important;
+  color: #a5a5a5;
+  font-size: 1.1rem;
+  display: block;
+}
+.news-details-page-container .image {
+  flex: 1;
+  min-width: 350px;
+}
+.news-details-page-container .image img.news-img {
+  width: 100%;
+  border-radius: 15px;
+  margin-bottom: 25px;
+}
+.news-details-page-container .OutlineElement *,
+.news-details-page-container .news-description * {
+  color: var(--bodyText) !important;
+  font-family: Arial,Helvetica,sans-serif !important;
+  margin: 0 !important;
+} 
+.news-details-page-container .news-description a {
+  color: var(--link-text-color) !important;
+} 
+
+
+
+
+@media screen and (max-width: 1500px) {
+  /* .news-details-page-container .OutlineElement *,
+  .news-details-page-container .news-description * {
+    font-size: 1.1rem !important;
+  }  */
+}
+@media screen and (max-width: 1199px) {
+  .news-details-page-container {
+    padding: 15px;
+  }
+  .news-details {
+    gap: 15px;
+  }
+  .news-details-page-container .content h1.news-title {
+    font-size: 1.7rem;
+  } 
+  /* .news-details-page-container .OutlineElement *,
+  .news-details-page-container .news-description * {
+    font-size: 1rem !important;
+  }  */
+}
+@media screen and (max-width: 800px) {
+  .news-details-page-container {
+    padding: 10px;
+  }
+  .news-details {
+    gap: 10px;
+    flex-direction: column-reverse;
+  }
+  .news-details-page-container .content h1.news-title {
+    font-size: 1.4rem;
+  } 
+}
+@media screen and (max-width: 425px) {
+  .news-details-page-container .content h1.news-title {
+    font-size: 1.1rem;
+  }
+  
+}

@@ -1,0 +1,12 @@
+.knowledge-container .knowledge-slider {
+  position: relative;
+  display: flex;
+  gap: 20px;
+  scroll-behavior: smooth;
+  overflow: auto;
+  border-radius: 15px;
+}
+
+.knowledge-container .knowledge-slider::-webkit-scrollbar {
+  display: none;
+}

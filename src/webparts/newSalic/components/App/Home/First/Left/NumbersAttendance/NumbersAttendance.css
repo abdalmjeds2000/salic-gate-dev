@@ -1,0 +1,114 @@
+.numbers-attendance-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin: 25px 0;
+}
+
+.numbers-attendance-container .progress_section {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0 45px;
+  gap: 15px;
+}
+.numbers-attendance-container .progress_section > div {
+  width: 100%;
+  min-width: 280px;
+  background: linear-gradient(90deg,#e7f0fe,hsla(0,0%,100%,0));
+  border-radius: 100px;
+}
+.numbers-attendance-container .progress_section div.leave_balance_mobile {
+  display: none;
+}
+
+
+.numbers-attendance-container .attendance_section {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+.numbers-attendance-container .attendance_section .latest_attendance {
+  flex: 5;
+}
+.numbers-attendance-container .attendance_section .leave_balance {
+  flex: 2;
+}
+
+
+
+.attendance-chart-container {
+  position: relative;
+}
+.attendance-chart-container .mid-total {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  font-size: 1.5rem;
+  color: #8c8c8c;
+  z-index: 1;
+}
+.attendance-chart-container .mid-total:hover {
+  text-decoration: underline;
+}
+.numbers-attendance-container .leave_balance > div {
+  margin: 0 !important;
+}
+.numbers-attendance-container .leave_balance canvas {
+  width: 100% !important;
+  height: 200px !important;
+}
+@media screen and (max-width: 1600px) {
+  .numbers-attendance-container .leave_balance canvas {
+    height: 160px !important;
+  }
+}
+@media screen and (max-width: 1300px) {
+  .numbers-attendance-container .leave_balance canvas {
+    height: 140px !important;
+  }
+}
+
+.numbers-attendance-container .CircularProgressbar .CircularProgressbar-text {
+  font-size: 1.6rem !important;
+  transform: translateY(3px);
+}
+
+
+.numbers-attendance-container .ant-table-tbody tr[data-row-key=row-level-1] {
+  background-color: #efefef!important;
+}
+
+
+
+
+
+/* for mobile */
+@media screen and (max-width: 800px) {
+  .numbers-attendance-container {
+    margin: 15px 0;
+  }
+  .numbers-attendance-container .attendance_section {
+    flex-direction: column-reverse;
+    gap: 15px;
+  }
+  .numbers-attendance-container .attendance_section .latest_attendance {
+    flex: 1;
+    width: 100%;
+  }
+  .numbers-attendance-container .attendance_section .leave_balance {
+    flex: 1;
+  }
+  .numbers-attendance-container .progress_section {
+    padding: 0 30px;
+    gap: 20px;
+    flex-direction: column;
+  }
+  .numbers-attendance-container .attendance_section .leave_balance {
+    display: none;
+  }
+  .numbers-attendance-container .progress_section div.leave_balance_mobile {
+    display: block;
+  }
+}

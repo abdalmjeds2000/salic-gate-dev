@@ -1,0 +1,79 @@
+.custom-progress .progress {
+	display: flex;
+  height: 20px;
+  margin-bottom: 20px;
+  background-color: #f5f5f5;
+  border-radius: 4px;
+}
+
+.custom-progress .progress .progress-bar {
+	float: left;
+	width: 0;
+	height: 100%;
+	font-size: 12px;
+	line-height: 20px;
+	color: #fff;
+	text-align: center;
+	background-color: #dcdcdc;
+	-webkit-box-shadow: inset 0 -1px 0 rgba(0,0,0,.15);
+	box-shadow: inset 0 -1px 0 rgba(0,0,0,.15);
+	transition: .3s;
+}
+.custom-progress .progress .progress-bar:hover {
+	opacity: .7;
+	margin: 0 3px;
+	box-shadow: 0 4px 12px rgb(0 0 0 / 30%);
+}
+.custom-progress .bg-success {
+	background-color: #0abb87 !important;
+}
+.custom-progress .bg-warning {
+	background-color: #ffb822 !important;
+}
+.custom-progress .bg-info {
+	background-color: #5578eb !important;
+}
+.custom-progress .bg-disabled {
+	background-color: #cfcfcf !important;
+}
+.custom-progress .bg-danger	{
+	background-color: #fd397a !important;
+}
+.custom-progress .bg-wait	{
+	background-color: #ffe8b7 !important;
+}
+
+.custom-progress .row-item {
+	display: flex;
+	align-items: center;
+	margin-bottom: 1.5rem;
+}
+.custom-progress .row-item:last-child {
+	margin-bottom: 0rem;
+}
+.custom-progress .row-item .row-item-legend {
+	min-width: 1.3rem;
+	height: 1.3rem;
+	border-radius: 3px;
+	margin-left: 1.25rem;
+}
+
+.custom-progress .row-item > .row-item-desc {
+	margin-left: 1rem;
+	margin-right: 1rem;
+	flex-grow: 1;
+}
+.custom-progress .row-item > .row-item-desc a {
+	color: #000 !important;
+	font-size: 1rem;
+	font-weight: 500;
+	text-transform: capitalize;
+}
+.custom-progress .row-item > .row-item-desc a:hover {
+	text-decoration: underline;
+}
+.custom-progress .row-item .row-item-count {
+	font-weight: 400;
+	color: #74788d;
+	margin: auto 1.25rem auto auto;
+}

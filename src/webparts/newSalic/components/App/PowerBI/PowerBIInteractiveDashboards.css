@@ -1,0 +1,7 @@
+.power-bi-iframe-container {
+  height: 100%;
+}
+
+.power-bi-iframe-container iframe {
+  height: calc(100vh - 85px) !important;
+}

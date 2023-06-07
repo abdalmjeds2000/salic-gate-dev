@@ -1,0 +1,6 @@
+.research-categories-page-container {
+  display: flex;
+  gap: 20px;
+  position: relative;
+}
+

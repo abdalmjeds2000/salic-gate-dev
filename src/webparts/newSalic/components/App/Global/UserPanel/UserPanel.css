@@ -1,0 +1,69 @@
+.user-panel-container {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  gap: 12px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding-right: 25px;
+}
+.user-panel-container .icons {
+  display: flex;
+  gap: 12px;
+  position: relative;
+
+}
+.user-panel-container .icons a {
+  position: relative;
+  display: flex;
+}
+.user-panel-container .icons a .badge {
+  max-height: 15px;
+  font-size: 0.65rem;
+  font-weight: 600;
+}
+.user-panel-container .icons svg {
+  width: 20px;
+  height: 20px;
+  transition: var(--main-animation-duration);
+}
+.user-panel-container .icons svg:hover {
+  opacity: 0.7;
+}
+
+.user-panel-container .user-info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.user-panel-container .user-info h2 {
+  font-weight: 400;
+  font-size: 1.2rem;
+}
+.user-panel-container .user-info img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  box-shadow: 0 3px 5px #00000010;
+  border: 3px solid #fff;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1200px) {
+  .user-panel-container .user-info h2 {
+    max-width: 80px!important;
+    overflow: hidden!important;
+    white-space: nowrap!important;
+    text-overflow: ellipsis!important;
+    display: inline-block!important;
+  }
+}
+
+
+
+@media screen and (max-width: 800px) {
+  .user-panel-container {
+    display: none;
+  }
+}

@@ -1,0 +1,50 @@
+.profile-container {
+  padding: 25px;
+}
+@media screen and (max-width: 768px) {
+  .profile-container {
+    padding: 0;
+  }
+}
+
+
+
+
+.profile-container .card-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px 50px;
+}
+
+.profile-container .card-content svg {
+  color: var(--link-text-color);
+}
+
+.profile-container .card-content .email-part .ant-statistic-content-value {
+  max-width: 150px !important;
+  overflow: hidden !important;
+  white-space: nowrap !important;
+  text-overflow: ellipsis !important;
+  display: inline-block !important;
+}
+
+/* @media screen and (max-width: 768px) {
+  .profile-container .card-content {
+    gap: 0;
+  }
+  .profile-container .card-content .ticket {
+    width: 50%;
+    margin-bottom: 12px;
+  }
+  .profile-container .card-content .email-part .ant-statistic-content-value {
+    overflow: initial !important;
+  }
+} */
+
+
+.profile-container .latest-leaves-cart-title {
+  color: black !important;
+}
+.profile-container .latest-leaves-cart-title:hover {
+  text-decoration: underline;
+}

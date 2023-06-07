@@ -1,0 +1,87 @@
+.kpi-card-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+/* Start Card Header */
+.kpi-card-container .card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  margin-bottom: 12px;
+}
+.kpi-card-container .card-header .value-type {
+  width: 40px;
+  height: 40px;
+  padding: 20px;
+  background-color: rgba(0,0,0,.25);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  transition: .3s;
+}
+.kpi-card-container .card-header .value-type span {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #fff;
+}
+.kpi-card-container .card-header .value-type:hover {
+  box-shadow: 0 7px 7px rgba(0, 0, 0, 0.1);
+}
+.kpi-card-container .card-header .s-e-dates span {
+  font-size: 0.8rem;
+  color: #aaa;
+}
+/* End Card Header */
+
+
+
+
+
+
+
+/* Start Card Body */
+.kpi-card-container .card-body {
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+
+.kpi-card-container .card-body .achieve-date {
+  display: block;
+  font-size: 0.8rem;
+  margin-bottom: 5px;
+}
+.kpi-card-container .card-body .title {
+  font-size: 1.1rem;
+  color: #000 !important;
+  line-height: 1.3;
+  font-weight: 500;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* number of lines to show */
+          line-clamp: 2; 
+  -webkit-box-orient: vertical;
+}
+.kpi-card-container .card-body .description {
+  font-size: 0.9rem;
+  color: #aaa !important;
+  line-height: 1.2;
+  font-weight: 400;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+/* End Card Body */

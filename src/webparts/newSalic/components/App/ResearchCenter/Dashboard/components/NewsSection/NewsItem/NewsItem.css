@@ -1,0 +1,13 @@
+.research-weakly-news-item {
+  background-color: #fff;
+  border: 1px solid #efefef;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 10;
+  transition: .3s;
+}
+
+.research-weakly-news-item:hover {
+  background-color: var(--third-color);
+  cursor: pointer;
+}

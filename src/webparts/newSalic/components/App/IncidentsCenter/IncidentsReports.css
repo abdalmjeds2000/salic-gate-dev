@@ -1,0 +1,15 @@
+.report-information-tables {
+  margin-bottom: 25px;
+}
+.report-information-tables .ant-descriptions table {
+  table-layout: fixed !important;
+}
+
+
+.department-part {
+  padding: 20px;
+  background-color: #fafafa;
+  border-radius: 3px;
+  border: 1px solid #efefef;
+  margin-top: 40px;
+}

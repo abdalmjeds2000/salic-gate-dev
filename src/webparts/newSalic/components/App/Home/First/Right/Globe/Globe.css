@@ -1,0 +1,197 @@
+.globe {
+  display: flex;
+  flex-direction: column;
+}
+
+.globe .scene-container {
+  margin: 0 auto;
+}
+
+
+
+/* Slider Cards */
+.cards .card-container{
+  border-radius: 10px;
+  padding: 10px;
+  color: var(--text-color);
+  width: 100%;
+  margin: 0 auto;
+  max-width: 90%;
+}
+.cards .carousel-row .card-container{
+  position: relative !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+}
+.carousel-next:before {
+  background-image: url(../../../../../../assets/icons/globe/card/next-card-icon.svg) !important;
+}
+.carousel-prev:before {
+  background-image: url(../../../../../../assets/icons/globe/card/prev-card-icon.svg) !important;
+}
+
+.cards .card-container .header {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.cards .card-container .header img {
+  width: 50px;
+}
+.cards .card-container .header div h3 {
+  font-weight: 400;
+  font-size: 1.2rem;
+}
+.cards .card-container .header div p {
+  font-weight: 400;
+  font-size: 1rem;
+}
+.cards .card-container .description p {
+  font-weight: 400;
+  font-size: .9rem;
+  line-height: 1.1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  line-clamp: 4;
+  -webkit-box-orient: vertical;
+}
+.cards .card-container ul {
+  display: flex;
+  font-size: 0.7rem;
+  margin-top: 5px !important;
+  gap: 5px;
+}
+.cards .card-container ul li {
+  background-color: #fff;
+  padding: 3px;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 1750px) and (min-width: 1500px) {
+  .cards .card-container .header img {
+    width: 40px;
+  }
+  .cards .card-container .header div h3 {
+    font-size: 1.1rem;
+  }
+  .cards .card-container .header div p {
+    font-size: 0.9rem;
+  }
+  .cards .card-container .description p {
+    font-size: 0.8rem;
+  }
+}
+@media screen and (max-width: 1499px) and (min-width: 1200px) {
+  .cards .card-container .header img {
+    width: 30px;
+  }
+  .cards .card-container .header div h3 {
+    font-size: 0.9rem;
+  }
+  .cards .card-container .header div p {
+    font-size: 0.7rem;
+  }
+  .cards .card-container .description p {
+    font-size: 0.6rem;
+    line-height: 1.1;
+  }
+}
+@media screen and (max-width: 1199px) and (min-width: 990px) {
+  .cards .card-container .header img {
+    width: 25px;
+  }
+  .cards .card-container .header div h3 {
+    font-size: 0.8rem;
+  }
+  .cards .card-container .header div p {
+    font-size: 0.6rem;
+  }
+  .cards .card-container .description p {
+    font-size: 0.5rem;
+    line-height: 1.2;
+  }
+}
+
+
+
+
+
+
+/* Slider */
+.ant-carousel {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: rgba(0, 0, 0, 0.85);
+  font-size: 14px;
+  font-variant: tabular-nums;
+  line-height: 1.5715;
+  list-style: none;
+  font-feature-settings: 'tnum', "tnum";
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  width: 60%;
+}
+.ant-carousel .slick-dots li.slick-active button {
+  background: var(--main-color) !important;
+}
+.ant-carousel .slick-dots li button {
+  background: #0C508C50 !important;
+}
+
+.slick-track {
+  opacity: 1;
+  transform: translate3d(0px) !important;
+  width: 200px !important;
+}
+
+
+.home-container .home-division .home-world-graph {
+  position: relative;
+  z-index: 3;
+  top: -90px;
+}
+@media screen and (min-width: 1750px) {
+  .home-container .home-division .home-world-graph {
+    top: -90px;
+  }
+}
+@media screen and (max-width: 1749px) and (min-width: 1500px) {
+  .home-container .home-division .home-world-graph {
+    top: -90px;
+  }
+}
+@media screen and (max-width: 1499px) and (min-width: 1400px) {
+  .home-container .home-division .home-world-graph {
+    top: -65px;
+  }
+}
+@media screen and (max-width: 1399px) and (min-width: 1300px) {
+  .home-container .home-division .home-world-graph {
+    top: -65px;
+  }
+}
+@media screen and (max-width: 1299px) and (min-width: 1150px) {
+  .home-container .home-division .home-world-graph {
+    top: -60px;
+  }
+}
+@media screen and (max-width: 1149px) and (min-width: 990px) {
+  .home-container .home-division .home-world-graph {
+    top: -60px;
+  }
+}
+
+.products-imgs {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+.products-imgs img {
+  width: 40px;
+}

@@ -1,0 +1,30 @@
+.finance-master-page-container {
+  position: relative;
+}
+.finance-master-page-container .finance-master-row-header {
+  
+}
+.finance-master-page-container .finance-master-row-header.lvl-1 {
+  background-color: #e7e7e7;
+  font-size: 1.2rem;
+}
+.finance-master-page-container .finance-master-row-header.lvl-1 td {
+  padding: 10px !important;
+}
+.finance-master-page-container .finance-master-row-header.lvl-2 {
+  background-color: #ededed;
+  font-size: 1rem;
+}
+.finance-master-page-container .finance-master-row-header.lvl-2 td {
+  padding-left: 25px !important;
+}
+.finance-master-page-container .finance-master-row-header.lvl-3 {
+  background-color: #f9f9f9;
+}
+.finance-master-page-container .finance-master-row-header.lvl-3 td {
+  padding-left: 50px !important;
+}
+
+.finance-master-page-container .lvl-4 td:first-child {
+  padding-left: 50px !important;
+}

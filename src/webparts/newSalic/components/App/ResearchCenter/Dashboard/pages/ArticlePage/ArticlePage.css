@@ -1,0 +1,35 @@
+.article-page-container {
+  position: relative;
+  top: 85px;
+  padding: 25px;
+}
+.article-page-container .content {
+  display: flex;
+  gap: 25px;
+}
+.article-page-container .content .img {
+  flex: 2;
+  overflow: hidden;
+  border-radius: 15px;
+}
+.article-page-container .content .body {
+  flex: 3;
+}
+.article-page-container .research-article-paragraph * {
+  color: #000!important;
+  font-size: 1.1rem!important;
+  line-height: 1.4!important;
+  background: transparent!important;
+  font-family: unset!important;
+}
+
+@media screen and (max-width: 800px) {
+  .article-page-container {
+    padding: 10px;
+  }
+}
+@media screen and (max-width: 990px) {
+  .article-page-container .content {
+    flex-direction: column-reverse;
+  }
+}

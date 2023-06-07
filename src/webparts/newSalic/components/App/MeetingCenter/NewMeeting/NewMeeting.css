@@ -1,0 +1,153 @@
+.table-page-container {
+  padding: 25px;
+  min-height: calc(100vh - 85px);
+  position: relative;
+  top: 85px;
+  margin-bottom: 85px;
+}
+
+.table-page-container .content {
+  background-color: #fff;
+  border-radius: 15px;
+  position: relative;
+}
+.table-page-container .content .header {
+  padding: 12px 25px;
+  background-color: var(--main-color);
+  border-radius: 15px 15px 0 0;
+  display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.table-page-container .content .header > div .ant-space {
+  flex-wrap: wrap !important;
+}
+.table-page-container .content .header h1 {
+  font-size: 1.2rem;
+  color: #fff !important;
+  font-weight: 400;
+}
+
+
+
+.table-page-container .content .form {
+  padding: 25px 15px;
+  border-radius: 0 0 15px 15px;
+  overflow-x: auto;
+}
+
+
+
+@media screen and (min-width: 800px) and (max-width: 1200px) {
+  .table-page-container {
+    padding: 15px;
+  }
+  .table-page-container .content .header {
+    padding: 10px 20px;
+    border-radius: 10px 10px 0 0;
+  }
+  .table-page-container .content .header h1 {
+    font-size: 1rem;
+  }
+}
+
+
+@media screen and (min-width: 0px) and (max-width: 799px) {
+  .table-page-container {
+    padding: 10px;
+  }
+  .table-page-container .content .form {
+    padding: 15px 10px;
+    padding-bottom: 25px;
+    border-radius: 0 0 15px 15px;
+    overflow-x: auto;
+  }
+  .table-page-container .content .header {
+    padding: 10px 15px;
+    border-radius: 10px 10px 0 0;
+  }
+  .table-page-container .content .header h1 {
+    font-size: 0.9rem;
+  }
+  .ant-table .ant-table-tbody > tr > td {
+    font-size: 0.8rem !important;
+  }
+
+}
+
+
+
+
+/* Editor Custom Styling */
+.rdw-editor-toolbar {
+  border-radius: 2px;
+  border: 1px solid #d9d9d9;
+  background: #fff;
+}
+.rdw-editor-main {
+  border: 1px solid #d9d9d9 !important;
+  line-height: 0.5 !important;
+  padding: 6px 5px 0 !important;
+  border-radius: 2px !important;
+}
+.rdw-editor-toolbar a {
+  color: #000 !important;
+}
+
+
+
+
+
+
+/* Calendar Custom Styling */
+.react-calendar-timeline {
+  font-size: 0.7rem !important;
+}
+.react-calendar-timeline .rct-header-root {
+  background: var(--main-color) !important;
+  border-bottom: 1px solid var(--third-color) !important;
+}
+
+.react-calendar-timeline .rct-dateHeader {
+  height: 100%;
+  font-size: 0.7rem;
+}
+.react-calendar-timeline .rct-sidebar .rct-sidebar-row {
+  font-size: 0.7rem;
+  line-height: 1 !important;
+  white-space: normal !important;
+}
+.react-calendar-timeline .rct-calendar-header > div {
+  height: 20px !important;
+}
+
+.react-calendar-timeline .rct-item .rct-item-content {
+  background-color: var(--second-color) !important;
+  color: #000 !important;
+}
+.react-calendar-timeline .rct-item .rct-item-content {
+  width: 100% !important;
+}
+
+.rct-item {
+  background: var(--second-color) !important;
+  border-color: var(--main-color) !important;
+}
+
+
+
+
+/* antd transfer component */
+.ant-transfer {
+  justify-content: space-between !important;
+}
+.ant-transfer-list {
+  width: 50% !important;
+  border-radius: 5px !important;
+  min-height: 350px !important;
+}
+.ant-transfer-list-header {
+  border-radius: 5px 5px 0 0 !important;
+}

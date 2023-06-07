@@ -1,0 +1,37 @@
+.research-news-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-radius: 10px;
+}
+.arrow.arrow-btm {
+  top: calc(100% - 50px);
+}
+.bottom-scroll-icon {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.ellipsis-paragraph {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  line-clamp: 4;
+  -webkit-box-orient: vertical;
+}
+.research-news-paragraph * {
+  color: #333 !important;
+  font-size: 1rem !important;
+  line-height: 1.4 !important;
+  background: transparent !important;
+  font-family: unset !important;
+}
+.stop-ellipsis {
+  overflow: initial;
+  text-overflow: initial;
+  display: initial;
+  -webkit-line-clamp: initial;
+  line-clamp: initial;
+  -webkit-box-orient: initial;
+}

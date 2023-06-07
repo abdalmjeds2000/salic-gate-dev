@@ -1,0 +1,226 @@
+.team-tree-container {
+  position: relative;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin: 0;
+  overflow: auto;
+}
+.team-tree-container::-webkit-scrollbar {
+  display: none;
+  width: 5px;
+  transition: .3s;
+}
+.team-tree-container:hover::-webkit-scrollbar {
+  display: block;
+}
+.team-tree-container::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+.team-tree-container::-webkit-scrollbar-thumb {
+  background: rgb(212, 212, 212); 
+  border-radius: 3px;
+}
+.team-tree-container::-webkit-scrollbar-thumb:hover {
+  background: rgb(153, 153, 153); 
+}
+
+
+
+
+.team-tree-container::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: calc(100% - 50px);
+  background-color: #ececec;
+  margin-left: 50px;
+  overflow: hidden;
+}
+.team-tree-container::-webkit-scrollbar {
+  display: none;
+}
+
+.team-tree-container .back-btn {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.team-tree-container .parent {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  min-width: 20rem;
+}
+
+.team-tree-container .parent .img img {
+  position: relative;
+  width: 70px;
+  height: 70px;
+  border: 6px solid #ececec;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: .3s;
+}
+.team-tree-container .parent .img {
+  position: relative;
+}
+.team-tree-container .parent .img::before {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 15px;
+  left: 50%;
+  bottom: -15px;
+  transform: translateX(-50%);
+  background-color: #ececec;
+}
+
+
+
+
+
+
+
+.team-tree-container .parent img:hover {
+  transform: scale(1.06);
+}
+
+.team-tree-container .parent img:hover,
+.team-tree-container .parent.active img {
+  border-color:var(--main-color);
+}
+
+.team-tree-container .mobile-childrens {
+  display: none;
+  margin-left: 75px;
+}.team-tree-container .desktop-childrens {
+  display: block;
+}
+
+.team-tree-container .childrens {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.team-tree-container .childrens .child-item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  cursor: pointer;
+  /* background-color: #ececec; */
+  border-radius: 50%;
+}
+
+.team-tree-container .childrens .child-item::before {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 25px;
+  background-color: #ececec;
+  bottom: -25px;
+  left: 25px;
+  transform: translateX(-50%);
+}
+
+
+.team-tree-container .childrens .child-item img {
+  width: 50px;
+  height: 50px;
+  border: 4px solid #ececec;
+  border-radius: 50%;
+  transition: .3s;
+}
+
+.team-tree-container .childrens .child-item:hover img {
+  border-color: var(--main-color);
+  transform: scale(1.06);
+}
+.team-tree-container .childrens .child-item.active img {
+  border-color: var(--main-color);
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+  .team-tree-container::before {
+    display: none;
+  }
+  .team-tree-container .parent .img::before {
+    content: "";
+    height: 20px;
+    bottom: -20px;
+  }
+  .team-tree-container .parent .img::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 50px;
+    bottom: -20px;
+    left: 50%;
+    background-color: #ececec;
+  }
+  .team-tree-container .childrens .child-item::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 2px;
+    background-color: #ececec;
+    left: 0;
+    top: calc(50% - 2px);
+  }
+
+  .team-tree-container .childrens .child-item img {
+    width: 40px;
+    height: 40px;
+    border-width: 3px;
+    position: relative;
+  }
+  .team-tree-container .childrens .child-item .child-item-desc {
+    display: none;
+  }
+  .team-tree-container .mobile-childrens {
+    display: block;
+  }.team-tree-container .desktop-childrens {
+    display: none;
+  }
+  .team-tree-container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0; 
+    background-color: #fff;
+    border-radius: 10px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.team-tree-container .parent .img[data-has-childrens="false"]::before,
+.team-tree-container .parent .img[data-has-childrens="false"]::after,
+.team-tree-container[data-has-childrens="false"]::before {
+  display: none;
+}

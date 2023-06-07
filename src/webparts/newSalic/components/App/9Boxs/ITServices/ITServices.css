@@ -1,0 +1,40 @@
+.new-account-fields-container {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.new-account-fields-container .ant-form-item {
+  margin-bottom: 5px !important;
+}
+
+
+/* 
+.ant-table-tbody .ant-table-row[data-row-key="PROCESSING"] { 
+  background: rgb(255,245,229) !important;
+  background: linear-gradient(90deg, #d5ffe6 0%, rgba(255,255,255,1) 100%) !important;
+}
+.ant-table-tbody .ant-table-row[data-row-key="SUBMITTED"] { 
+  background: rgb(255,229,229)!important;
+  background: linear-gradient(90deg,#ffe1e1,#fff) !important;
+}
+.ant-table-tbody .ant-table-row[data-row-key="Waiting_For_Approval"] { 
+  background: rgb(255,245,229) !important;
+  background: linear-gradient(90deg, #fff0db 0%, rgba(255,255,255,1) 100%) !important;
+} */
+.ant-table-row.PROCESSING {
+  background: linear-gradient(90deg, #d5ffe6 0%, rgba(255,255,255,1) 100%) !important;
+}
+.ant-table-row.SUBMITTED {
+  background: linear-gradient(90deg,#ffe1e1,#fff) !important;
+}
+.ant-table-row.Waiting_For_Approval {
+  background: linear-gradient(90deg, #fff0db 0%, rgba(255,255,255,1) 100%) !important;
+}
+
+
+.it-service-requests-table-container .ant-table-cell {
+  background: transparent !important;
+}
+.it-service-requests-table-container .ant-pagination-options-size-changer.ant-select {
+  display: block !important;
+}

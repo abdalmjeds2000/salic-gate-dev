@@ -1,0 +1,91 @@
+
+.eSign-requests-container .header {
+  background-color: var(--main-color);
+  padding: 10px 25px;
+  border-radius: 10px 10px 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+}
+.eSign-requests-container .header h1 {
+  color: #fff !important;
+  font-size: 1.5rem;
+  line-height: 1;
+  font-weight: 400;
+}
+.eSign-requests-container .header .controls {
+  display: flex;
+  gap: 10px;
+}
+
+.eSign-requests-container .table {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 0 0 10px 10px;
+  overflow-x: auto;
+}
+
+
+.eSign-requests-container .table .eSign-subject {
+  display: flex;
+  min-width: 200px;
+}
+.eSign-requests-container .table .eSign-subject .eSign-more-btn {
+  display: none;
+  transition: 0.5s;
+}
+.eSign-requests-container .table .eSign-subject:hover .eSign-more-btn {
+  display: flex;
+}
+
+
+
+
+.recipients-table {
+  width: 100%;
+  border-color: #ccc;
+  border-radius: 10px;
+}
+.recipients-table tr th,
+.recipients-table tr td {
+  padding: 5px;
+  font-size: 1rem;
+}
+.recipients-table tr:nth-child(odd) {
+  background-color: #f5f5f5;
+}
+
+
+
+@media screen and (max-width: 768px) {
+  .eSign-requests-container .header {
+    /* flex-direction: column; */
+    gap: 5px;
+  }
+  .eSign-requests-container .header h1 {
+    font-size: 1.2rem;
+  }
+  /* .eSign-requests-container .header .controls {
+    width: 100%;
+  }
+  .eSign-requests-container .header .controls {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+  } */
+  .eSign-requests-container .header .controls span.ant-input-affix-wrapper {
+    width: 100%;
+  }
+  /* .eSign-requests-container .header .controls button.ant-btn.ant-btn-primary,
+  .eSign-requests-container .header .controls a.ant-btn.ant-btn-default {
+    width: 48%;
+  } */
+
+  .eSign-requests-container .header .controls button span:not([role="img"]),
+  .eSign-requests-container .header .controls a span:not([role="img"]) {
+    display: none !important;
+  }
+
+}

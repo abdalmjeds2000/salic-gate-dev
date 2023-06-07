@@ -1,0 +1,5 @@
+.research-section-container .secondary-articles-container .secondary-article {
+  min-width: calc((100%/3) - 7px);
+  display: inline-block;
+}
+

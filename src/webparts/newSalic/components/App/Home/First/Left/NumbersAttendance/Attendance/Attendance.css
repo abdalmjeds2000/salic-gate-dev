@@ -1,0 +1,129 @@
+.latest-attendance-table-container .latest-attendance-table {
+  width: 100%;
+  padding: 10px 25px;
+  table-layout: auto;
+}
+
+.latest-attendance-table-container .latest-attendance-table .desktop-body {
+  display: contents;
+}
+.latest-attendance-table-container .latest-attendance-table .mobile-body {
+  display: none;
+}
+
+
+.latest-attendance-table-container .latest-attendance-table tr th,
+.latest-attendance-table-container .latest-attendance-table tr td:not(:first-child) {
+  font-size: 1rem;
+}
+.latest-attendance-table-container .latest-attendance-table tr td:not(:first-child) {
+  text-align: center;
+}
+.latest-attendance-table-container .latest-attendance-table tr td span {
+  line-height: 0px;
+  font-size: 2rem;
+  position: relative;
+  top: 5px;
+  right: 2px;
+}
+
+.latest-attendance-table-container .latest-attendance-table tbody tr:nth-child(2) {
+  line-height: 1;
+  height: 35px;
+}
+.latest-attendance-table-container .latest-attendance-table tbody tr:nth-child(2):first-child {
+  text-align: left;
+}
+.latest-attendance-table-container .latest-attendance-table td {
+  padding: 3px 25px;
+  font-size: 1rem;
+}
+.latest-attendance-table-container div.thead {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+.latest-attendance-table-container .latest-attendance-table tbody > tr h2 {
+  font-weight: 400;
+  font-size: 1.2rem;
+}
+
+.latest-attendance-table-container .latest-attendance-table tr:nth-child(3) {
+  /* background: rgb(204,204,204);
+  background: linear-gradient(270deg, rgba(204,204,204,0) 0%, rgba(231,240,254,1) 100%); */
+}
+
+.latest-attendance-table-container .latest-attendance-table tbody tr:nth-child(2) th:first-child {
+  text-align: left;
+  padding-left: 25px;
+}
+.latest-attendance-table-container .latest-attendance-table tbody tr:nth-child(2) th {
+  font-weight: 500;
+}
+.latest-attendance-table-container .latest-attendance-table th,
+.latest-attendance-table-container .latest-attendance-table td {
+  color: var(--text-color) !important;
+}
+
+
+
+.latest-attendance-table .ant-empty-normal {
+  margin: 10px 0 0 0 !important;
+}
+
+
+
+@media screen and (max-width: 1090px) {
+  .latest-attendance-table-container .latest-attendance-table {
+    width: 100%;
+    padding: 20px 0;
+    font-size: 0.8em;
+  }
+  .latest-attendance-table-container .latest-attendance-table tbody tr:nth-child(2),
+  .latest-attendance-table-container .latest-attendance-table tbody > tr a {
+    /* display: none; */
+    font-size: 1rem;
+  }
+  
+  .latest-attendance-table-container .latest-attendance-table tbody > tr h2 {
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .latest-attendance-table-container .latest-attendance-table tr th, 
+  .latest-attendance-table-container .latest-attendance-table tr td:not(:first-child) {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  
+  .latest-attendance-table-container .latest-attendance-table td {
+    padding: 5px 10px;
+  }
+  .latest-attendance-table-container .latest-attendance-table .desktop-body {
+    display: none;
+  }
+  .latest-attendance-table-container .latest-attendance-table .mobile-body {
+    display: contents;
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  .latest-attendance-table-container .latest-attendance-table td {
+    font-size: 1.2rem;
+  }
+  .latest-attendance-table-container .latest-attendance-table tbody > tr h2 {
+    font-size: 1.6rem;
+  }
+  .latest-attendance-table-container .latest-attendance-table tbody > tr a {
+    font-size: 1.2rem;
+    
+  }
+  .latest-attendance-table-container .latest-attendance-table tr th, 
+  .latest-attendance-table-container .latest-attendance-table tr td:not(:first-child) {
+    font-size: 1.2rem;
+  }
+}

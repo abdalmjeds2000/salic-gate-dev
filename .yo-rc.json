@@ -1,0 +1,16 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "plusBeta": false,
+    "isCreatingSolution": true,
+    "version": "1.15.2",
+    "libraryName": "salicwebpart",
+    "libraryId": "38565689-425c-450d-bda4-8815172d6f71",
+    "environment": "spo",
+    "packageManager": "npm",
+    "solutionName": "salicwebpart",
+    "solutionShortDescription": "salicwebpart description",
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "componentType": "webpart"
+  }
+}

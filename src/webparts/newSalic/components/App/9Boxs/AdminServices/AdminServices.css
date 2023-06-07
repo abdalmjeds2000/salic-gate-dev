@@ -1,0 +1,7 @@
+.admin-services-table {
+  width: 100%;
+  overflow-x: auto;
+}
+.admin-services-table::-webkit-scrollbar {
+  display: none !important;
+}

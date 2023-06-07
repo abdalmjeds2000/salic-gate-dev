@@ -1,0 +1,97 @@
+.service-requests-dashboard-container {
+  display: flex;
+  gap: 15px;
+  position: relative;
+  overflow: auto;
+}
+
+/* DIVISIONS */
+.service-requests-dashboard-container .employees-tree {
+  width: 250px;
+  min-width: 220px;
+  overflow-x: auto;
+  padding: 20px 10px;
+  background-color: #fff;
+  box-shadow: 0 5px 10px var(--third-color);
+  border-radius: 0 0 25px 25px;
+}
+
+
+
+.desc-tooltip-text-black {
+  color: #333 !important;
+}
+
+
+
+
+
+/* Components Custom Style*/
+.ant-card-head {
+  background-color: #f5f5f5!important;
+  padding: 0 12px !important;
+}
+.table-page-container {
+  padding: 0;
+  top: 0;
+}
+.sr-by-types-chart canvas {
+  height: 300px !important;
+}
+
+.service-requests-dashboard-container .card-container {
+  height: 100%;
+}
+.service-requests-dashboard-container .card-container .ant-card {
+  height: 100% !important;
+}
+.service-requests-dashboard-container .ant-tree .ant-tree-node-content-wrapper.ant-tree-node-selected {
+  background-color: var(--third-color) !important;
+  font-weight: 500 !important;
+}
+
+.service-requests-dashboard-container .ant-tree .ant-tree-node-content-wrapper {
+  line-height: 15px !important;
+  font-size: 0.7rem !important;
+  top: 0px !important;
+  display: flex !important;
+  align-items: center !important;
+}
+
+/* Increase Border Radius to antd Card */
+.ant-card {
+  border-radius: 12px !important;
+  /* overflow: hidden; */
+}
+.service-requests-dashboard-container .ant-card-head {
+  border-radius: 15px 15px 0 0 !important;
+}
+.service-requests-dashboard-container .expand-tree-btn {
+  display: none;
+}
+.service-requests-dashboard-container .tree-container {
+  display: block;
+}
+
+@media screen and (min-width: 0px) and (max-width: 799px) {
+  .service-requests-dashboard-container {
+    flex-direction: column;
+  }
+  .service-requests-dashboard-container .employees-tree {
+    width: 100%;
+    padding: 25px 15px;
+  }
+  .service-requests-dashboard-container .expand-tree-btn {
+    display: inline;
+  }
+  .service-requests-dashboard-container .tree-container {
+    display: none;
+  }
+}
+
+
+@media screen and (min-width: 800px) {
+  .service-requests-dashboard-container .tree-container {
+    display: block !important;
+  }
+}

@@ -1,0 +1,80 @@
+.attendance-page-container {
+  width: 100%;
+  min-height: calc(100vh - 85px);
+  position: relative;
+  top: 85px;
+  margin-bottom: 85px;
+}
+.attendance-page-container .header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 25px 0 0 25px;
+}
+.attendance-page-container .header div.icon {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #FA8181;
+  border-radius: 50%;
+}
+.attendance-page-container .header div.icon svg g * {
+  fill: #fff;
+}
+.attendance-page-container .header h2 {
+  font-weight: 400;
+  font-size: 1.8rem;
+  color: var(--text-color);
+}
+
+
+
+.attendance-page-container .buttons ul {
+  display: flex;
+  padding: 25px 25px 0 25px;
+}
+.attendance-page-container .buttons ul li {
+  padding: 10px 20px;
+  color: #6477AA90;
+  border-radius: 10px 10px 0 0;
+  text-align: center;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: .3s;
+  background-color: #EBF1FF80;
+}
+.attendance-page-container .buttons ul li.active {
+  background-color: #EBF1FF;
+  color: var(--text-color);
+  border-top: 1px solid #00000007;
+  border-right: 1px solid #00000007;
+  border-left: 1px solid #00000007;
+}
+
+
+.attendance-sections-container {
+  background-color: #EBF1FF;
+  width: 100%;
+  position: relative;
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 890px) {
+
+  .attendance-page-container .buttons ul {
+    display: flex;
+    padding: 25px 10px 0 10px;
+    flex-wrap: wrap;
+  }
+  .attendance-page-container .header {
+    padding: 25px 10px 0 10px;
+  }
+}

@@ -1,0 +1,163 @@
+.home-container .person {
+  display: none;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 5px 25px;
+  background: rgb(231,240,254);
+  background: linear-gradient(90deg, rgba(231,240,254,1) 0%, rgba(255,255,255,0) 100%);
+  z-index: 1;
+}
+.home-container .person .person-info {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.home-container .person .person-info .person-img {
+  position: relative;
+}
+.home-container .person .person-info .person-img img {
+  width: 65px;
+  height: 65px;
+  border: 5px solid #fff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+/* .home-container .person .person-info .person-img::before {
+  content: "";
+  position: absolute;
+  background-color: white;
+  width: 2px;
+  height: 15px;
+  left: 50%;
+  top: 65px;
+} */
+.home-container .person .person-info .person-txt {
+  display: flex;
+  flex-direction: column;
+}
+.home-container .person .person-info .person-txt h1 {
+  font-weight: 400;
+  font-size: 1.3rem;
+  line-height: 1.2;
+}
+.home-container .person .person-info .person-txt > p {
+  font-weight: 400;
+  font-size: 1.0rem;
+  line-height: 1.2;
+}
+.home-container .person .person-info .person-txt .detailes {
+  display: flex;
+  gap: 20px;
+}
+.home-container .person .person-info .person-txt .detailes .item > span { /* span: items inside tooltip */
+  display: flex;
+  height: 100%;
+  width: 100%;
+  gap: 8px;
+  align-items: center;
+  font-size: 0.7rem;
+}
+.home-container .person .person-info .person-txt .detailes .item svg {
+  width: 0.7rem;
+}
+
+/* .home-container .person .person-info .person-txt .detailes .co-workers::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 2px;
+  width: calc(100% - 33px);
+  background-color: white;
+} */
+.home-container .person .person-control-buttons .btns {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.home-container .person .person-control-buttons svg {
+  width: 1.7rem;
+  transition: .3s;
+  cursor: pointer;
+}
+.home-container .person .person-control-buttons svg:hover {
+  opacity: 0.7;
+}
+.home-container .person .person-control-buttons a {
+  position: relative;
+  display: flex;
+}
+@media screen and (min-width: 1500px) {
+  .home-container .home-division .home-info .person {
+    padding: 20px 25px;
+  }
+  .home-container .person .person-control-buttons svg {
+    width: 2rem;
+  }
+  .home-container .person .person-info .person-img img {
+    max-width: 75px;
+  }
+  .home-container .person .person-info .person-txt h1 {
+    font-size: 1.7rem;
+  }
+  .home-container .person .person-info .person-txt > p {
+    font-size: 1.4rem;
+  }
+  .home-container .person .person-info .person-txt .detailes div {
+    font-size: 0.9rem;
+  }
+  .home-container .person .person-info .person-txt .detailes div svg {
+    width: 0.9rem;
+  }
+  .home-container .person {
+    display: flex;
+    padding: 15px 25px;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .home-container .person {
+    display: flex;
+  }
+}
+
+
+
+.badge {
+  min-width: 17px;
+  height: 17px;
+  text-align: center;
+  border-radius: 50px;
+  position: absolute;
+  color: #fff;
+  font-size: 0.75rem;
+  top: -4px;
+  right: -10px;
+  padding: 2px 4px;
+  line-height: 1;
+}
+.mail-count {
+  background-color: rgb(39, 124, 98);
+  box-shadow: 0 2px 3px #79D5A775;
+}
+.notifi-count {
+  background-color: rgb(255, 39, 43);
+  box-shadow: 0 2px 3px #EF949475;
+}
+
+
+
+.person-btns {
+  position: absolute;
+  right: 30%;
+}
+@media screen and (max-width: 990px) {
+  .person-btns {
+    position: absolute;
+    right: 25px;
+  }
+}

@@ -1,0 +1,47 @@
+.search-page {
+  margin: 85px 0;
+}
+.search-page .result-container {
+  padding: 25px 100px;
+}
+@media screen and (min-width: 800px) and (max-width: 1200px) {
+  .search-page .result-container {
+    padding: 25px 50px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .search-page .result-container {
+    padding: 25px 15px;
+  }
+}
+
+
+/* START HEADER STYLING */
+.search-page-header {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  gap: 25px;
+  padding: 25px;
+  width: 100%;
+  height: 20rem;
+  background: rgb(11,92,186);
+  background: linear-gradient(300deg, rgba(11,92,186,1) 0%, rgba(108,175,255,1) 100%);
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgb(0 0 0 / 20%);
+}
+.search-page-header > h1 {
+  color: #fff !important;
+  text-align: center;
+}
+.search-page-header .ant-input-group .ant-input {
+  padding: 10px 15px !important; /* for increase height and width*/
+}
+.search-page-header .ant-input-search-large .ant-input-search-button {
+  height: 47px !important; /* instead 40px to equel input height*/
+}
+/* END HEADER STYLING */
+
+
+

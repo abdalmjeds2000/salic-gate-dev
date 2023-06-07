@@ -1,0 +1,35 @@
+#person-mobile {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: none !important;
+}
+.person-mobile .person-info-mobile {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0px !important;
+}
+.person-txt-mobile {
+  text-align: center;
+}
+.person-txt-mobile h1 {
+  font-size: 1.1rem !important;
+}
+.person-txt-mobile p {
+  font-size: 0.8rem !important;
+}
+
+
+@media screen and (max-width: 599px) {
+  #person-mobile {
+    display: flex;
+  }
+  .home-container .person .person-control-buttons {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+}

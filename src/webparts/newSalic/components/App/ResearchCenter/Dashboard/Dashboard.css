@@ -1,0 +1,49 @@
+.research-center_dashboard-container {
+  padding: 0 35px 35px 35px;
+  min-height: calc(100vh - 85px);
+  position: relative;
+  top: 85px;
+  margin-bottom: 85px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+@media screen and (min-width: 800px) and (max-width: 1200px) {
+  .research-center_dashboard-container {
+    padding: 0 25px 25px 25px;
+  }
+}
+@media screen and (min-width: 0px) and (max-width: 799px) {
+  .research-center_dashboard-container {
+    padding: 0 20px 20px 20px;
+  }
+}
+
+
+
+
+/* Pulse and country section */
+.research-scrollable-container {
+  max-height: 55rem;
+  scroll-behavior: smooth;
+  overflow: auto;
+  transition: .3s;
+}
+@media screen and (max-width: 990px){
+  .research-scrollable-container {
+    max-height: calc(20rem + 10px);
+  }
+}
+.research-scrollable-container::-webkit-scrollbar {
+  display: none;
+}
+
+
+/* Customize Pagination */
+.ms-Stack-inner {
+  gap: 5px !important;
+}
+.ms-Stack-inner button {
+  border: none !important;
+}

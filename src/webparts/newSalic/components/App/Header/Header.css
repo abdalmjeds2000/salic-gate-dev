@@ -1,0 +1,149 @@
+.navbar {
+  min-height: 50px;
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  background: rgb(255,255,255);
+  z-index: 3;
+}
+
+
+.navbarOnScroll {
+  min-height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 25px;
+  position: fixed;
+  top: 0;
+  background-color: #fff;
+  z-index: 2;
+}
+
+
+
+.navbar img.logoSALIC {
+  position: relative;
+  top: -2px;
+  left: 9px;
+  max-width: 200px;
+  cursor: pointer;
+}
+.navbar img.logo_2030 {
+  position: absolute;
+  left: 210px;
+  top: 50%;
+  max-width: 35px;
+  transform: translateY(-50%);
+  opacity: .2;
+}
+
+
+.navbar .sp-search-input {
+  z-index: 1;
+  width: 450px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(calc(-50% - 25px),-50%);
+  background-color: #fff;
+  border-radius: 28px;
+  transition: .3s;
+  overflow: hidden;
+  box-shadow: 0 0 8px rgba(0,0,0,.05);
+}
+@media screen and (max-width: 1200px) {
+  .navbar .sp-search-input {
+    width: 340px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .navbar .sp-search-input {
+    width: 280px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .navbar .sp-search-input {
+    width: 200px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .navbar .sp-search-input {
+    width: 75% !important;
+    transform: translate(-50%,-50%);  
+  }
+}
+@media screen and (min-width: 800px){
+  .navbar .sp-search-input {
+    top: 50% !important;
+  }
+}
+
+
+.navbar .sp-search-input .ant-input-affix-wrapper {
+  padding: 0 10px !important;
+  border-radius: 28px !important;
+}
+.navbar .sp-search-input:hover,
+  .navbar .sp-search-input:focus {
+  box-shadow: 0 0 8px rgba(0,0,0,.15);
+}
+
+.navbar .sp-search-input .ant-input-group-addon {
+  display: none !important;
+}
+.navbar .sp-search-input .ant-input {
+  border: none !important;
+  background-color: transparent !important;
+  padding: 6px 12px !important;
+}
+.navbar .sp-search-input .ant-input::placeholder {
+  color: var(--text-color) !important;
+}
+
+@media screen and (max-width: 320px){
+  .navbar img.logoSALIC {
+    max-width: 120px;
+    left: 0;
+  }
+  .navbar {
+    justify-content: end;
+  }
+}
+@media screen and (max-width: 375px){
+  .navbar img.logoSALIC {
+    max-width: 165px;
+    left: 0;
+  }
+}
+
+
+@media screen and (max-width: 800px){
+  .navbar {
+    justify-content: center;
+    padding: 0 !important;
+  }
+  .navbar img.logoSALIC {
+    position: relative;
+    top: -2px;
+    left: 0;
+    width: 360px;
+  }
+
+  .navbar img.logo_2030 {
+    display: none;
+  }
+}
+
+
+
+.navbar .toggle-btn-search-mobile {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}

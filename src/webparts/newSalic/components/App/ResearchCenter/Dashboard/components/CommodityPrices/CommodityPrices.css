@@ -1,0 +1,19 @@
+.commodity-prices-container .ant-tabs-left>.ant-tabs-nav .ant-tabs-tab {
+  padding: 14px 24px !important;
+  background-color: #fff !important;
+  width: 100% !important;
+  display: flex !important;
+  justify-content: right !important;
+}
+.commodity-prices-container .ant-tabs-left>.ant-tabs-nav .ant-tabs-tab+.ant-tabs-tab {
+  margin: 0 0 0 0 !important;
+}
+
+
+
+.commodity-prices-container .ant-tabs>.ant-tabs-nav, .ant-tabs>div>.ant-tabs-nav {
+  background-color: #fff !important;
+  padding: 0px 15px 15px 15px !important;
+  border-radius: 7px 7px 0 0 !important;
+  margin: 0 !important;
+}
