@@ -1,7 +1,4 @@
-.report-information-tables {
-  margin-bottom: 25px;
-}
-.report-information-tables .ant-descriptions table {
+.info-section-container .ant-descriptions table {
   table-layout: fixed !important;
 }
 
@@ -12,4 +9,87 @@
   border-radius: 3px;
   border: 1px solid #efefef;
   margin-top: 40px;
+}
+
+
+
+
+[data-theme='compact'] .site-navigation-steps,
+.site-navigation-steps {
+  box-shadow: inset 0 -2px 0 0 #efefefa8;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+
+.preview-incident-container {
+  min-height: calc(100vh - 135px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.preview-incident-container .header {
+  padding: 20px;
+  background-color: #fafafa;
+  border-radius: 15px 15px 0 0;
+  border-bottom: 3px solid #efefef;
+  overflow: auto;
+  height: auto;
+}
+
+.preview-incident-container .content {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 0 0 15px 15px;
+  overflow: hidden;
+  flex: 1;
+}
+
+.preview-incident-container .content .info-section-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  position: relative;
+}
+.preview-incident-container .content .info-section-container .infos {
+  flex: 4;
+}
+.preview-incident-container .content .info-section-container .details {
+  flex: 1;
+  display: block;
+}
+.preview-incident-container .content .info-section-container .infos .close-btn {
+  display: none;
+}
+@media screen and (max-width: 992px) {
+  .preview-incident-container .header {
+    border: none;
+  }
+  .preview-incident-container .content {
+    padding: 10px;
+  }
+  .preview-incident-container .content .info-section-container {
+    flex-direction: column-reverse;
+  }
+  .preview-incident-container .content .info-section-container .infos {
+    flex: 1;
+  }
+  .preview-incident-container .content .info-section-container .details {
+    flex: 1;
+    width: 100%;
+    display: none;
+    position: absolute;
+    top: 35px;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0 10px 10px rgba(0,0,0,.14901960784313725);
+    padding: 20px;
+    border-radius: 0 0 20px 20px;
+    border-top: 4px solid #eee;
+    padding-top: 0;
+  }
+  .preview-incident-container .content .info-section-container .infos .close-btn {
+    display: inline-block;
+  }
 }

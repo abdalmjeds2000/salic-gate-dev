@@ -13,9 +13,9 @@ import CustomAntUploader from '../../Global/CustomAntUploader/CustomAntUploader'
 
 
 const FinancialImpactOptions = [
-  { value: 'Actual loss', labelTitle: "Actual loss", labelDesc: "If the incident resulted in a financial loss" },
-  { value: 'Potential loss', labelTitle: "Potential loss", labelDesc: "If the incident has been discovered that may or may not result in a financial loss" },
-  { value: 'Near miss', labelTitle: "Near miss", labelDesc: "If the incident was averted. It should be estimated based on an assumption of a financial impact if the incident had occurred" },
+  { value: 'ActualLoss', labelTitle: "Actual loss", labelDesc: "If the incident resulted in a financial loss" },
+  { value: 'PotentialLoss', labelTitle: "Potential loss", labelDesc: "If the incident has been discovered that may or may not result in a financial loss" },
+  { value: 'NearMiss', labelTitle: "Near miss", labelDesc: "If the incident was averted. It should be estimated based on an assumption of a financial impact if the incident had occurred" },
 ];
 
 
@@ -45,13 +45,12 @@ const NewIncidentReport = () => {
     dataForm.DiscoveryDate = moment(dataForm.DiscoveryDate).format('MM/DD/YYYY');
     dataForm.IncidentDate = moment(dataForm.IncidentDate).format('MM/DD/YYYY');
     dataForm.Amount = `${dataForm.Amount ? dataForm.Amount : 0}`;
-    dataForm.FileNames = files.join(',');
+    dataForm.Files = files.join(',');
 
     const response = await axios.post('https://dev.salic.com/api/Incidents/Add', dataForm);
     if(response) {
       console.log(response);
       form.resetFields();
-      setFileList([]);
       notification.success({message: response.data.Message || 'Success'});
       window.open(defualt_route + '/incidents-center/my-reports');
     } else {
@@ -141,7 +140,7 @@ const NewIncidentReport = () => {
                 </Col>
                 <Col span={24}>
                   {formData?.HasFinancialImpact === "True" && 
-                    <Form.Item name="FinancialImpactType" label="Financial Impact" rules={[{ required: true }]}>
+                    <Form.Item name="FinancialImpactDetails" label="Financial Impact" rules={[{ required: true }]}>
                       <Select placeholder="Select Financial Impact" size="large">
                         {FinancialImpactOptions.map(option => (
                           <Select.Option value={option.value}>

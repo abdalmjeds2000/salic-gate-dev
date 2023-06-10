@@ -151,7 +151,15 @@ img.img-bg {
   display: none;
 }
 
-
+.attachments-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: #f8f8f8;
+  border: 1px solid #eee;
+}
 
 /* standard app page */
 .standard-page {
