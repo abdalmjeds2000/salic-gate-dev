@@ -50,18 +50,22 @@ const PreviewIncidentReport = () => {
   const currentDepFeedbackData = reportData?.Assignees?.filter(item => item?.ToUser?.Mail?.toLowerCase() == user_data?.Data?.Mail?.toLowerCase())?.[0];
 
   /* if admin show tabs if not just show for current user */
-  const departmentFeedbackContent = isRiskAdmin ? (
-      <Tabs
-        defaultActiveKey="0"
-        type="card"
-        items={reportData?.Assignees?.map((item, index) => ({
-          key: index,
-          label: item?.ResponsibleDepartment,
-          children: <DepartmentFeedback reportData={reportData} formData={item || {}} onFinish={getReportById} />,
-        }))}
-      />
-  ) : (
-    <DepartmentFeedback reportData={reportData} formData={currentDepFeedbackData || {}} onFinish={getReportById} />
+  const departmentFeedbackContent = (
+    <div style={{ maxWidth: 1600, margin: '0 auto' }}>
+      {isRiskAdmin ? (
+        <Tabs
+          defaultActiveKey="0"
+          type="card"
+          items={reportData?.Assignees?.map((item, index) => ({
+            key: index,
+            label: item?.ResponsibleDepartment,
+            children: <DepartmentFeedback reportData={reportData} formData={item || {}} onFinish={getReportById} />,
+          }))}
+        />
+      ) : (
+        <DepartmentFeedback reportData={reportData} formData={currentDepFeedbackData || {}} onFinish={getReportById} />
+      )}
+    </div>
   );
   const stepsItems = [
     { 

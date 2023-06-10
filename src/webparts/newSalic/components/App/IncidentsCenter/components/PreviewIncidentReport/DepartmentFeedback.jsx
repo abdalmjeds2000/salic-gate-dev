@@ -63,7 +63,7 @@ const DepartmentFeedback = ({ reportData, formData, onFinish }) => {
     return data;
   }
   return (
-    <div style={{ maxWidth: 1600, margin: '0 auto' }}>
+    <React.Fragment>
       {reportData?.Status !== 'REVIEW' && (
         <Form
           name="responsible-department-part" layout="vertical"
@@ -179,7 +179,7 @@ const DepartmentFeedback = ({ reportData, formData, onFinish }) => {
           </Col>}
         </Form>
       )}
-    </div>
+    </React.Fragment>
   )
 }
 
