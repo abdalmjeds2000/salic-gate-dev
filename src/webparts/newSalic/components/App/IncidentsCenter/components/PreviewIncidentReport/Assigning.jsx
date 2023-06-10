@@ -55,7 +55,7 @@ const Assigning = ({ reportData, onFinish }) => {
 
 
   return (
-    <div style={{ maxWidth: 1500, margin: '0 auto' }}>
+    <div style={{ maxWidth: 1300, margin: '0 auto' }}>
       {["REVIEW"].includes(reportData?.Status) ? (
         <Form
           name="risk-department-part" 

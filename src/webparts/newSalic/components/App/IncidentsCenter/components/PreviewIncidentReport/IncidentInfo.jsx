@@ -38,7 +38,7 @@ const IncidentInfo = ({ reportData }) => {
     detailsRef.current.style.display = showDetails ? "none" : "block";
   }
   return (
-    <div style={{ maxWidth: 1800, margin: '0 auto' }}>
+    <div style={{ maxWidth: 1600, margin: '0 auto' }}>
       <div className='info-section-container'>
         <div className='infos'>
           <div style={{ display: 'flex', justifyContent: 'space-between' }}>

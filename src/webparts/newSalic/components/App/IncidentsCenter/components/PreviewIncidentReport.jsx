@@ -51,7 +51,7 @@ const PreviewIncidentReport = () => {
 
   /* if admin show tabs if not just show for current user */
   const departmentFeedbackContent = (
-    <div style={{ maxWidth: 1600, margin: '0 auto' }}>
+    <div style={{ maxWidth: 1100, margin: '0 auto' }}>
       {isRiskAdmin ? (
         <Tabs
           defaultActiveKey="0"
